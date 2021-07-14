@@ -29,10 +29,9 @@ public class JUnitBasicoTest {
 	/*
 	 * O JUnit informa o resultado esperado e o obtido.
 	 */
-	
-	@Test 
+	@Test
 	public void testAssertEqualInts() {
-		assertEquals(1, 1);
+		assertEquals(2, 2);
 	}	
 	
 	
@@ -59,12 +58,11 @@ public class JUnitBasicoTest {
 	 * que podem acontecer.
 	 * 
 	 */
-	
 	@Test
 	public void testAssertAlmostEqualDoubles() {
 		double numerator = 10.0;
 		double denominator = 3.0;
-		double delta = 0.001;
+		double delta = 0.1;
 		double expected = 3.333;
 		double quotient = numerator/denominator;
 		
@@ -76,22 +74,20 @@ public class JUnitBasicoTest {
 	 * whatToSay.  Before you fix it, note how JUnit indicates where the
 	 * expected and actual strings differ
 	 */
-	
 	@Test
-	public void testCompareStrings1() {
+	public void testCompareStrings() {
 		String greeting = "Hello";
-		String greetee = "World";
+		String greetee = " World";
 		
 		String whatToSay = greeting + greetee;
 		
 		assertEquals("Hello World", whatToSay);
 	}
 	
-	
 	@Test
-	public void testCompareStrings() {
+	public void testCompareArrays() {
 		int[] array1 = {1,2,3,4};
-		int[] array2 = {5,1,2,3,4};
+		int[] array2 = {1,2,3,4};
 		assertArrayEquals(array1, array2);
 	}
 	
