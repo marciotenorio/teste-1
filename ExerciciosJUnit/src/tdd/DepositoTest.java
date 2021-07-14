@@ -1,13 +1,16 @@
 package tdd;
 import static org.junit.Assert.*;
 
+import org.junit.Test;
+
 /*
  * Adaptado de James W. Grenning
  * 
  */
 
 public class DepositoTest {
-
+	
+	@Test
 	public void testCreate() {
 		String depositDate = "2015-03-13";
 		int valor = 3000;
