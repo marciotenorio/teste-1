@@ -185,6 +185,7 @@ public class ContaCorrenteTest  {
 	 * LEMA DO TDD: RED BAR + GREEN BAR + REFATORAMENTO (QUANDO NECESSÁRIO)
 	 */
 	
+	@Test
 	public void testProduceextratoWithMultipleDeposito() {
 			String expected = 
 	
