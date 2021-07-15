@@ -32,7 +32,7 @@ public class ContaCorrente {
 		this.nome = nome;
 		this.saldo = saldo;
 		depositos = new ArrayList<Deposito>();
-		this.saldoInicial = 0;
+		this.saldoInicial = saldo;
 	}
 	
 	public double saldo() {
