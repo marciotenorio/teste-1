@@ -28,7 +28,10 @@ public class CalculoImpostoRenda {
 			impostotot = 0.15;
 		} else if (valor > 10000){
 			impostotot = 0.2;
+		}else if(valor < 0) {
+			return 0;
 		}
+		
 		BigDecimal result= new BigDecimal(Math.abs(valor * impostotot)).setScale(2, RoundingMode.HALF_EVEN);
 		return Double.valueOf(result.toString());
 	}
