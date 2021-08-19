@@ -134,20 +134,5 @@ public class MaoNaMassa3 {
 		}
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 }

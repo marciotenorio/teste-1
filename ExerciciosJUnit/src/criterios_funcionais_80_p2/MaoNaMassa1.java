@@ -41,27 +41,27 @@ public class MaoNaMassa1 {
 	}
 	
 	@Test
-	public void deveTerImpostoDe10Reais() {
+	public void deveTerImpostoDe_120_1_Reais() {
 		assertEquals(120.1, calculoImpostoRenda.calculaPorcentagem(1201), 0);
 	}
 	
 	@Test
-	public void deveTerImpostoDe015Reais() {
+	public void deveTerImpostoDe_751_5_Reais() {
 		assertEquals(751.5, calculoImpostoRenda.calculaPorcentagem(5010), 0);
 	}
 	
 	@Test
-	public void deveTerImpostoDe02Reais() {
+	public void deveTerImpostoDe_2000_2_Reais() {
 		assertEquals(2000.2, calculoImpostoRenda.calculaPorcentagem(10001), 0);
 	}
 
 	@Test
-	public void deveTerImpostoDe0Reais() {
+	public void deveTerImpostoDe_0_Reais() {
 		assertEquals(0, calculoImpostoRenda.calculaPorcentagem(0), 0);
 	}
 	
 	@Test
-	public void deveTerImpostoDe0ReaisComValorNegativo() {
+	public void deveTerImpostoDe_0_ReaisComValorNegativo() {
 		assertEquals(0, calculoImpostoRenda.calculaPorcentagem(-1), 0);
 	}
 	
