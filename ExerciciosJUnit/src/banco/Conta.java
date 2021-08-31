@@ -15,16 +15,17 @@ public class Conta{
 		return saldo;
 	} 
 
-	public double debitar (double valor) throws OperacaoIlegalException {
-		
-		
-		if( valor >= 0 && valor <= this.saldo){
-	         saldo = saldo-valor; 
-	    }
-		else{
-			throw new OperacaoIlegalException();
+	public double debitar(double valor) throws OperacaoIlegalException {
+
+		if (valor >= 0) {
+			if (valor <= this.saldo) {
+				saldo = saldo - valor;
+			} 
+			else {
+				throw new OperacaoIlegalException();
+			}
 		}
-	   return saldo;
+		return saldo;
 
 	}
 
@@ -41,10 +42,6 @@ public class Conta{
 	   return saldo;
 
 	}
-	
-	/* Este método transfere o valor da conta origem para a conta destino. Se o 
-	 * valor for negativo ou superior que o saldo da conta origem uma 
-	 * OperacaoIlegalException é lançada*/
 
 	 public void transferir (Conta destino, double valor) throws OperacaoIlegalException {
 		 destino.creditar(valor);

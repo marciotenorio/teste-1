@@ -36,7 +36,4 @@ public class CalculoImpostoRenda {
 		return Double.valueOf(result.toString());
 	}
 
-	public static void main(String[] args) {
-		System.out.println(calculaImposto(200.5));
-	}
 }
