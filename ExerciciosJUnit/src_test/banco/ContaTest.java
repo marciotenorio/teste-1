@@ -12,7 +12,13 @@ public class ContaTest{
 		c.debitar(10);
 		assertEquals(10,c.getSaldo(),10.0);
 	} 
-	
+
+	@Test
+	public void deveNaoDebitarNada() throws OperacaoIlegalException {
+		Conta conta = new Conta("001", 20);
+		conta.debitar(-1d);
+		assertEquals(20, conta.getSaldo(), 0);
+	}
 	
 	@Test(expected = OperacaoIlegalException.class)
 	public void transferirWithoutFunds() throws OperacaoIlegalException {
